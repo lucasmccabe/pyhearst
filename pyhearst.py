@@ -39,7 +39,8 @@ class PyHearst:
 
         Example Usage:
             >>> text = 'works by such authors as J. K. Rowling, Goldsmith, and Shakespeare.'
-            >>> annotate_sentence(text)
+            >>> ph = PyHearst()
+            >>> print(ph.annotate_sentence(text))
             'NP_works by such NP_authors as NP_J._K._Rowling, NP_Goldsmith, and NP_Shakespeare.'
         '''
         tagged_sent = nltk.pos_tag(nltk.word_tokenize(sent))
@@ -62,7 +63,8 @@ class PyHearst:
 
         Example Usage:
             >>> annotated_sentence = 'NP_works by such NP_authors as NP_J. NP_K. NP_Rowling, NP_Goldsmith, and NP_Shakespeare.'
-            >>> merge_consecutive_NPs(annotated_sentence)
+            >>> ph = PyHearst()
+            >>> print(ph.merge_consecutive_NPs(annotated_sentence))
             'NP_works by such NP_authors as NP_J._K._Rowling, NP_Goldsmith, and NP_Shakespeare.'
         '''
 
