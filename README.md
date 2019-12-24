@@ -1,6 +1,6 @@
 # pyhearst
 
-pyhearst is a Python implementation of the Hearst patterns for identifying hypernym-hyponym pairs.
+```pyhearst``` is a Python implementation of the Hearst patterns for identifying hypernym-hyponym pairs.
 
 In progress.
 
