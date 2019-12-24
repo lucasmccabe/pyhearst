@@ -12,13 +12,13 @@ class PyHearst:
         '''
         Constructor for the PyHearst class.
 
-        self.patterns: list of tuples, which each tuple formatted as:
-            (regex for Hearst pattern, hypernym identifier)
-            if hypernym identifier == 0, the first NP is the hypernym
-            if hypernym identifier == 1, the last NP is the hypernym
-
-        self.tests: list of test phrases, roughly derived from the
-            Hearst paper's examples
+        Parameters:
+            patterns: list of tuples, which each tuple formatted as:
+                (regex for Hearst pattern, hypernym identifier)
+                if hypernym identifier == 0, the first NP is the hypernym
+                if hypernym identifier == 1, the last NP is the hypernym
+            tests: list of test phrases, roughly derived from the
+                Hearst paper's examples
         '''
 
         self.patterns = [('(such NP_[\w.]* as NP_[\w.]*(,? (and | or )?NP_[\w.]*)*)', 0),
