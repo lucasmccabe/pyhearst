@@ -1,6 +1,6 @@
 # pyhearst
 
-```pyhearst``` is a Python implementation of the Hearst patterns for identifying hypernym-hyponym pairs.
+`pyhearst` is a Python implementation of the Hearst patterns for identifying hypernym-hyponym pairs.
 
 In progress.
 
@@ -11,7 +11,7 @@ In progress.
 * [License](#license)
 
 ## Setup
-pip later. For now, place pyhearst.py in a local repo and run:
+pip later. For now, stick pyhearst.py locally and run:
 
 ```python
 from pyhearst import PyHearst
@@ -22,7 +22,7 @@ To extract pairs from a text string:
 
 ```python
 ph = PyHearst()
-text = 'works by such individuals as Marti A. Hearst, P. J. Proudhon, and Esther Duflo and also foods such as pancakes, waffles, and eggs'
+text = 'works by such individuals as Marti A. Hearst, P. J. Proudhon, and Esther Duflo'
 for pattern in extract_patterns(hearst_patterns, text): print(pattern)
 ```
 
