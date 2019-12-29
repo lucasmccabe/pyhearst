@@ -23,7 +23,7 @@ To extract pairs from a text string:
 ```python
 ph = PyHearst()
 text = 'works by such individuals as Marti A. Hearst, P. J. Proudhon, and Esther Duflo'
-for pattern in extract_patterns(hearst_patterns, text): print(pattern)
+for pair in ph.extract_patterns(text): print(pair)
 ```
 
 ## References

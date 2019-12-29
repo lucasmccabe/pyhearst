@@ -111,7 +111,7 @@ class PyHearst:
         Example Usage:
             >>> hearst_patterns = [('such (NP_\w+) as (NP_\w+.*)(, (and | or )*NP_\w+)*', 0)]
             >>> text = 'works by such individuals as Marti A. Hearst, P. J. Proudhon, and Esther Duflo and also foods such as pancakes, waffles, and eggs'
-            >>> for pattern in extract_patterns(hearst_patterns, text): print(pattern)
+            >>> for pattern in ph.extract_patterns(text): print(pattern)
             ('individual', 'Marti A. Hearst')
             ('individual', 'P. J. Proudhon')
             ('individual', 'Esther Duflo')
